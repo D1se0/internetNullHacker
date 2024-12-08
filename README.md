@@ -1,80 +1,80 @@
-# Internet Null Hacker
+#Internet Null Hacker
 
-## 🛠️ Herramientas de Seguridad en Redes Privadas
+## 🛠️ Security Tools for Private Networks
 
-Este repositorio contiene dos potentes herramientas escritas en `Bash` diseñadas para mejorar la seguridad de tu `red WiFi privada`. 
+This repository contains two powerful tools written in `Bash` designed to improve the security of your `private WiFi network`. 
 
-1. **KnowARPHosts**: Identifica las direcciones `IP` conectadas a tu `red local`, permitiéndote detectar posibles intrusos.
+1. **KnowARPHosts**: Identify the `IP` addresses connected to your `local network`, allowing you to detect possible intruders.
 
-2. **InternetNullHacker**: Realiza un ataque de **ARP Spoofing** para desconectar dispositivos sospechosos y proteger tu `red`.
+2. **InternetNullHacker**: Perform an **ARP Spoofing** attack to disconnect suspicious devices and protect your 'network'.
 
 ---
 
-## 📜 Características de las Herramientas
+## 📜 Tool Features
 
 ### 🔍 **KnowARPHosts**
 
-- Escanea la red local utilizando `arp-scan`.
-- Identifica todas las direcciones `IP` activas en `tu red privada`.
-- Ayuda a detectar dispositivos `desconocidos o no autorizados`.
+- Scan the local network using `arp-scan`.
+- Identify all active `IP` addresses on `your private network`.
+- Helps detect 'unknown or unauthorized' devices.
 
 ### 🛡️ **InternetNullHacker**
 
-- Realiza un ataque de **ARP Spoofing** dirigido a un dispositivo específico.
-- Desconecta a posibles intrusos de tu `red WiFi`.
-- Automatiza la configuración y validación de dependencias como `dsniff`.
+- Performs an **ARP Spoofing** attack targeting a specific device.
+- Disconnect possible intruders from your 'WiFi network'.
+- Automates the configuration and validation of dependencies like `dsniff`.
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Use
 
-### Pre-requisitos
+### Prerequisites
 
-Antes de comenzar, asegúrate de tener instalado lo siguiente en tu sistema:
+Before you begin, make sure you have the following installed on your system:
 
-- **Bash** (generalmente preinstalado en sistemas Linux).
-- Herramientas necesarias como `arp-scan` y `dsniff`. Si no están instaladas, las herramientas lo manejarán automáticamente.
+- **Bash** (usually pre-installed on Linux systems).
+- Necessary tools such as `arp-scan` and `dsniff`. If they are not installed, the tools will handle it automatically.
 
-### 1️⃣ KnowARPHosts - Descubre dispositivos en tu red
+### 1️⃣ KnowARPHosts - Discover devices on your network
 
-1. **Ejecuta el script**:
+1. **Run the script**:
 
    ```bash
    ./knowARPHosts.sh
    ```
-   
-2. **Selecciona la interfaz de red**:
 
-Introduce la interfaz de `red` activa (por ejemplo, `wlan0` para `WiFi`).
+2. **Select the network interface**:
 
-3. **Observa los resultados**:
+Enter the active `network` interface (e.g. `wlan0` for `WiFi`).
 
-Verás una lista completa de direcciones `IP` y dispositivos conectados.
+3. **See the results**:
 
-## 2️⃣ InternetNullHacker - Desconecta intrusos
+You will see a complete list of IP addresses and connected devices.
 
-1. **Ejecuta el script**:
+## 2️⃣ InternetNullHacker - Disconnect intruders
+
+1. **Run the script**:
 
 ```bash
 ./internetNullHacker.sh
 ```
 
-2. **Introduce los datos solicitados**:
+2. **Enter the requested data**:
 
-Interfaz de red (por ejemplo, `wlan0`).
-`Dirección IP` del dispositivo objetivo.
+Network interface (for example, `wlan0`).
+`IP address` of the target device.
 
-3. **Inicia el ataque ARP Spoofing**:
+3. **Starts the ARP Spoofing attack**:
 
-El dispositivo objetivo será desconectado de la `red`.
+The target device will be disconnected from the `network`.
 
-## ⚠️ Advertencia
+## ⚠️ Warning
 
-Estas herramientas están diseñadas para ser utilizadas exclusivamente con fines educativos o en pruebas de seguridad autorizadas en `tu propia red`. El uso indebido puede ser ilegal. Asegúrate de contar con los permisos adecuados antes de usarlas.
+These tools are intended to be used exclusively for educational purposes or in authorized security testing on 'your own network'. Misuse may be illegal. Make sure you have the proper permissions before using them.
 
-## 🎨 Ejemplo de Uso
+## 🎨 Example of Use
 
-Escaneo de la Red
+Network Scan
 
 ```bash
 ./knowARPHosts.sh
@@ -93,7 +93,7 @@ Interface: wlan0, Datapath ID: 12:34:56:78:9a:bc
 192.168.1.3    88:99:77:66:55:44    Laptop
 ```
 
-### Ataque de ARP Spoofing
+### ARP Spoofing Attack
 
 ```bash
 ./internetNullHacker.sh
@@ -109,10 +109,10 @@ Info:
 [+] Presiona Ctrl+C para parar el ataque...
 ```
 
-## 🌟 Contribuciones
+## 🌟 Contributions
 
-Las contribuciones son bienvenidas. Si tienes ideas o mejoras, no dudes en enviar un `pull request` o abrir un `issue`.
+Contributions are welcome. If you have ideas or improvements, feel free to submit a pull request or open an issue.
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la Licencia `MIT`. Consulta el archivo `LICENSE` para más detalles.
+This project is licensed under the `MIT` License. See the `LICENSE` file for more details.
